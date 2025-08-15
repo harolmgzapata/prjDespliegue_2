@@ -88,9 +88,14 @@ WSGI_APPLICATION = 'prjhmgz.wsgi.application'
 # }
 
 DATABASES = {
+    # 'default': dj_database_url.config(
+    #     # Replace this value with your local database's connection string.
+    #     default='postgresql://postgres:r0O7+*@localhost:5432/renderbd',
+    #     conn_max_age=600
+    # )
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:r0O7+*@localhost:5432/renderbd',
+        default='postgresql://postgress:XlIV8qU3tCtA3D6eIYKHlny31fsicL8Y@dpg-d2fivemr433s73be56c0-a/renderbd_2grc',
         conn_max_age=600
     )
 }
