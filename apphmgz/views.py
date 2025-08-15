@@ -1,6 +1,9 @@
 from django.shortcuts import render
+from .models import Usuarios
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'render/index.html', {})
+    usuarios = Usuarios.objects.all()
+    contexto = {'usuarios': usuarios}
+    return render(request, 'render/index.html', contexto)
